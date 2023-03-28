@@ -31,14 +31,14 @@ const Home = () => {
     });
 
   const updateTask = async (id,status) => {
-    await axios.put('http://localhost:3003/todo/'+id, {
+    await axios.put('https://api-lake-pi.vercel.app/todo/'+id, {
       status: !status,
     });
     getTasks();
   }
 
   const saveTask = async () => {
-    const tasks = await axios.post("http://localhost:3003/todo", {
+    const tasks = await axios.post("https://api-lake-pi.vercel.app/todo", {
       title: title,
       description: description,
       date: date,
@@ -49,7 +49,7 @@ const Home = () => {
   };
 
   const getTasks = async () => {
-    const tasks = await axios.get("http://localhost:3003/todo");
+    const tasks = await axios.get("https://api-lake-pi.vercel.app/todo");
 
     setTasksDB(tasks.data);
   };

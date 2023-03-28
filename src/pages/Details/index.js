@@ -36,7 +36,7 @@ const Details = () => {
     });
 
   const getTask = async () => {
-    const task = await axios.get("http://localhost:3003/todo/" + id);
+    const task = await axios.get("https://api-lake-pi.vercel.app/todo/" + id);
 
     setTitle(task.data.title);
     setDescription(task.data.description);
@@ -46,14 +46,14 @@ const Details = () => {
   };
 
   const removeTask = async () => {
-    await axios.delete("http://localhost:3003/todo/" + id);
+    await axios.delete("https://api-lake-pi.vercel.app/" + id);
 
     alert("user deleted");
     history("/");
   };
 
   const updateTask = async () => {
-    await axios.put("http://localhost:3003/todo/" + id, {
+    await axios.put("https://api-lake-pi.vercel.app/" + id, {
       title: title,
       description: description,
       date: date,
