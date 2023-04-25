@@ -34,6 +34,17 @@ const Details = () => {
       progress: undefined,
       theme: "light",
     });
+  const del = () =>
+    toast.info("Task Excluida !", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
 
   const getTask = async () => {
     const task = await axios.get("https://api-lake-pi.vercel.app/todo/" + id);
@@ -48,7 +59,7 @@ const Details = () => {
   const removeTask = async () => {
     await axios.delete("https://api-lake-pi.vercel.app/todo/" + id);
 
-    alert("user deleted");
+    del();
     history("/");
   };
 
