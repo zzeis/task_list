@@ -6,8 +6,8 @@ Task manager to organize your goals and objectives to be accomplished
 # Library
 React
 
-<img src="https://drive.google.com/file/d/1cFBC276K-9oCHule95zLoVXHLXM9GzUZ/view">
+[![page1.png](https://i.postimg.cc/Gm8p3qLc/page1.png)](https://postimg.cc/87GGtdf3)
 
 <br>
 
-<img src="https://drive.google.com/file/d/1IDuBVhGwOSIFRtphyq-cWpdXPOLi-HlS/view">
+[![page2.png](https://i.postimg.cc/qvPvNyq2/page2.png)](https://postimg.cc/zykrMLnf)
