@@ -46,14 +46,14 @@ const Details = () => {
   };
 
   const removeTask = async () => {
-    await axios.delete("https://api-lake-pi.vercel.app/" + id);
+    await axios.delete("https://api-lake-pi.vercel.app/todo/" + id);
 
     alert("user deleted");
     history("/");
   };
 
   const updateTask = async () => {
-    await axios.put("https://api-lake-pi.vercel.app/" + id, {
+    await axios.put("https://api-lake-pi.vercel.app/todo/" + id, {
       title: title,
       description: description,
       date: date,
