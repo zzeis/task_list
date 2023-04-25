@@ -3,8 +3,8 @@
 
 Task manager to organize your goals and objectives to be accomplished
 
-# React
-
+# Library
+React
 
 <img src="https://drive.google.com/file/d/1cFBC276K-9oCHule95zLoVXHLXM9GzUZ/view">
 
